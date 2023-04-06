@@ -5,6 +5,37 @@ html{
   box-sizing: border-box;
 }
 
+
+/* FONTS */
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Medium.woff2') format('woff2'),
+      url('/fonts/Rubik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-SemiBold.woff2') format('woff2'),
+      url('/fonts/Rubik-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Regular.woff2') format('woff2'),
+      url('/fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -17,11 +48,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 22;
   background-color: #fff;
-  color: #222;
+  color: #4A4B4C;
 }
 
 img {
@@ -44,4 +75,15 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
